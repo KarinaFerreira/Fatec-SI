@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Contato</title>
+    
+</head>
+
+<body>
+
+    <nav>
+        <h1 id="titulo">Projeto Orientado</h1>
+        <a href="index.html" class="texto_nav">Home </a><span class="barrinha">|</span><a href="arthurRosa.html"
+            class="texto_nav"> Arthur Rosa </a><span class="barrinha">|</span><a href="karinaFerreira.html"
+            class="texto_nav"> Karina Ferreira </a><span class="barrinha">|</span><a href="tabelaCuriosidade.html"
+            class="texto_nav"> Tabela de curiosidades </a><span class="barrinha">|</span><a href="sitesFavoritos.html"
+            class="texto_nav"> Sites favoritos </a><span class="barrinha">|</span><span class="titulo_sel">
+            Contato</span>
+    </nav>
+    <div id="contato">
+        <h2>Preencha o formulário abaixo para entrar em contato conosco:</h2>
+        <div>
+            <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+                <p>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" size="40" maxlength="45" minlength="2"
+                        placeholder="seu nome" required autofocus>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" name="telefone" id="telefone" size="40" maxlength="11"
+                        placeholder="(__) _____-____" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" size="40" id="email" placeholder="seuemail@dominio.com" required>
+                </p>
+
+                <button id="botao_direita" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

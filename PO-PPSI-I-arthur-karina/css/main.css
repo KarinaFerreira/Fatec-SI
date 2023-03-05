@@ -1,0 +1,180 @@
+/*
+Lista de propriedades:
+1 - position: relative;
+
+A propriedade position, encontrada no CSS, define como um elemento pode ser posicionado (renderizado) no documento (página).
+Essa propriedade (position) pode ser acompanhada de outras, tais como, top, right, bottom, and left, que determinam como ficará a localização final do objeto,
+permitindo seu deslocamento, como será apresentado adiante.
+
+2 - border-radius: 10px;
+
+A propriedade CSS arredonda os cantos da borda externa de um elemento. Você pode definir um único raio para fazer cantos circulares ou
+dois raios para fazer cantos elípticos.
+
+3 - backdrop-filter: blur(5px);
+
+A propriedade CSS permite aplicar efeitos gráficos como desfoque ou mudança de cor na área atrás de um elemento.
+Como se aplica a tudo por trás do elemento, para ver o efeito, você deve tornar o elemento ou seu plano de fundo pelo menos parcialmente transparente.
+
+4 - text-decoration: none;
+
+A propriedade CSS abreviada define a aparência das linhas decorativas no texto.
+As decorações de texto são desenhadas em elementos de texto descendentes.
+Isso significa que, se um elemento especificar uma decoração de texto,um elemento filho não poderá remover a decoração.
+
+5 - align-items: center;
+
+A propriedade CSS align-items define o align-selfvalor em todos os filhos diretos como um grupo.
+No Flexbox, ele controla o alinhamento dos itens no Cross Axis . No Grid Layout, ele controla o alinhamento dos itens no Block Axis dentro de sua área de grid.
+O exemplo interativo abaixo demonstra alguns dos valores para align-itemsusar o layout de grade.
+
+*/
+body {
+    font-family: "century gothic", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: linear-gradient(90deg, #2a0975 6%, #054ea1 25%, #056d7a 45%, #118a70 55%, #409707 94%);
+}
+
+nav {
+    position: relative;
+    text-align: left;
+    padding: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+img {
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+th {
+    border-bottom: 1px solid #ffffff;
+}
+
+table {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.barrinha {
+    color: #ffffff;
+}
+
+.titulo_sel {
+    color: #3a373a;
+    font-weight: bold;
+}
+
+.texto_nav:hover {
+    background-color: #3a373a;
+    border-radius: 5px;
+}
+
+.texto_nav {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card, .fotos_index, .card, .card_lista, .card_tabela{
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.perfil_index {
+    text-align: center;
+    margin-right: 10px;
+    padding: 30px;
+
+}
+
+.fotos_index {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    padding: 50px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.card_lista {
+    width: 300px;
+    padding: 50px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.card_texto {
+    padding: 40px;
+}
+
+.card_tabela {
+    text-align: center;
+    padding: 50px;
+    line-height: 1.5;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#contato {
+    /* display: flex; */
+    width: 350px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 50px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+#cabecalho_index {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    position: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#titulo {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#botao_direita {
+    margin-left: 265px;
+}
