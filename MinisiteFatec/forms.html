@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+
+
+    <style>
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        ss input {
+            margin: 5px 0px 5px 0px;
+            padding: 7px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        #nome {
+            width: 500px;
+        }
+
+        #mensagem {
+            resize: none;
+        }
+
+        fieldset {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contato</h1>
+    <!--O get as informações do formulário aparecem na barra de endereço
+        Já o post  ele oculta
+        O navegado é defult com o método get.-->
+    <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+        <!--atributo size no input: tamanho do controle-->
+        <p>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" size="40" maxlength="45" minlength="2" placeholder="seu nome" required autofocus>
+        </p>
+        <p>
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha" maxlength="8">
+        </p>
+        <p>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" rows="10" cols="60"></textarea>
+        </p>
+        <p>
+            <label for="curso">Qual o seu curso</label><br>
+            <select name="curso" id="curso">
+                <option value="0">ESCOLHA...</option>
+                <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                <option value="CD">Ciência de Dados</option>
+                <option value="GE">Gestão Empresarial</option>
+                <option value="GP">Gestão Portuária</option>
+                <option value="RH">Gestão de Recursos Humanos</option>
+                <option value="LG">Logística</option>
+                <option value="SI">Sistemas para Internet</option>
+            </select>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Qual seu estado civil:</legend>
+            <input type="radio" name="estado_civil" value="1" id="solteiro"><label for="solteiro">Solteiro</label>
+            <input type="radio" name="estado_civil" value="2" id="casado"><label for="casado">Casado</label>
+            <input type="radio" name="estado_civil" value="3" id="viuvo"><label for="viuvo">Viúvo</label>
+            <input type="radio" name="estado_civil" value="4" id="outro"><label for="outro">Outro</label>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Aceito ser contatado por:</legend>
+            <input type="checkbox" name="contato-telefone" value="s" id="telefone"><label
+                for="telefone">Telefone</label>
+            <input type="checkbox" name="contato-email" value="s" id="e-mail"><label for="e-mail">E-mail</label>
+        </fieldset>
+        </p>
+        <button type="submit">Enviar</button>
+        <!--<input type="submit" value="Enviar">-->
+    </form>
+    <h2>Outro tipos de controles</h2>
+    <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+        <P>
+            <!--Uso do id não é usado apenas para label e estilo, também tem o propósito de utilizar os valores com javascript-->
+            <!--Input com number também aceita value.
+            value="5"-->
+            <label for="nota">Nota</label><br>
+            <input type="number" name="nota" id="nota" min="0" max="10" step="0.5">
+        </P>
+        <p>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+        <p>
+            <label for="url_site">Seu site</label><br>
+            <input type="url" name="url_site" id="url_site">
+
+        </p>
+        <p>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="cor">Cor favorita</label><br>
+            <input type="color" name="cor" id="cor">
+        </p>
+        <p>
+            <label for="data">Data</label><br>
+            <input type="date" nome="data" id="data">
+        </p>
+        <p>
+            <label for="hora">Hora</label><br><br>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <label for="data_hora">Data/Hora</label><br>
+            <input type="datetime-local" name="data_hora" id="data_hora">
+        </p>
+        <p>
+            <label for="semana">Semana</label><br>
+            <input type="week" name="semana" id="semana">
+        </p>
+        <p>
+            <label for="mes">Mês</label><br>
+            <input type="month" name="mes" id="mes">
+        </p>
+        <p>
+            <label for="satisfacao">Grau de Satisfação</label><br>
+            <!-- readonly não altera o valo, mas mante ele abilitado -->
+            <input type="range" name="satisfacao" id="satisfacao" min="0" max="10" disabled>
+        </p>
+        <p>
+            <label for="pesquisa">Pesquisar por</label><br>
+            <input type="search" name="pesquisa" id="pesquisa" >
+        </p>
+        <p>
+            <label for="foto">Sua Foto</label><br>
+            <input type="file" name="foto" id="foto" accept="image/jpeg, image/png">
+        </p>
+        <p>
+            <input type="text" pattern="[A-Z]{3}[0-9]{4}" name="placa" id="placa" placeholder="AAA0000">
+        </p>
+        <input type="hidden" name="id_preenchimento" value="3000100020000">
+        <button>Testar</button>
+    </form>
+    <!-- PESQUISAR pattern list -->
+</body>
+http://hub.fatecrl.edu.br/sobrino/recebe-v2.php
+
+</html>
